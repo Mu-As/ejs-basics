@@ -1,0 +1,17 @@
+<!-- <h1>Hi, I am <%= user.firstName %></h1> -->
+<!-- <h1>Hi, I am <%= user.firstName %></h1>
+<% if (user.admin) { %>
+<p>Let me tell you a secret: <b>I am an admin</b></p>
+<% } %> -->
+<%- include('../partials/head') %> <%- include('../partials/header') %>
+<script>
+    console.log('<%-myLocation%>')
+</script>
+<div class="container">
+  <!-- <h1>Hi, I am <%= user.firstName %> <%= user.lastName %></h1> -->
+  <h1>Hi, I am <%= user.firstName + " " + user.lastName  %> 
+  <h2>Welcome to my Blog</h2>
+  <h2><%= myLocation %></h2>
+</div>
+
+<%- include('../partials/footer') %>
